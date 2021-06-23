@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://arc.io/widget.min.js#LAAkDqmn"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constantin</title>
+    <link rel="stylesheet" href="css/stylesheet2.css">
+
+    <script>
+        setTimeout(() => {
+            // document.getElementById("hate").style.opacity=Math.random()>.9?".1":"0"
+            document.body.querySelector("main").style.opacity = "1"
+        }, 100)
+        setInterval(() => {
+            document.getElementById("title").style.fontSize = ((window.innerHeight + (window.innerWidth)) / 40) + "px"
+            document.getElementById("subt").style.fontSize = ((window.innerHeight + window.innerWidth) / 60) + "px"
+            // document.getElementById("langs").style.fontSize = ((window.innerHeight+window.innerWidth)/70)+"px"
+            for (el of document.querySelectorAll("div.icons>a")) {
+                el.style.marginRight = (((window.innerHeight + (window.innerWidth)) / 30) / (3)) + "px"
+            }
+        }, 100);
+    </script>
+</head>
+
+<body>
+    <div id="hate">
+        <h2>I hate every single one of you</h2>
+        <h3 style="transform:translate(-18px,0)">nightmare nightmare nightmare nightmare
+            <br>nightmare nightmare nightmare nightmare
+            <br>nightmare nightmare nightmare nightmare
+        </h3>
+    </div>
+    <main>
+        <div id="bg"></div>
+        <div class="bruh">
+            <h1 style="font-size:60px;" id="title">Contact</h1>
+            <h2 style="font-size:40px;" id="subt">Hier kannst du mich Kontaktieren.</h2>
+            <div class="contact">
+                <div onclick="document.location.href='https://github.com/HerrErde'">
+                    <h3>Github</h3>
+                </div>
+                <div onclick="document.location.href='https://twitter.com/herr_erde'">
+                    <h3>Twitter</h3>
+                </div>
+                <div onclick="document.location.href='https://discord.com/invite/YxxMy7H'">
+                    <h3>Discord</h3>
+                </div>
+                <div onclick="document.location.href='https://www.reddit.com/user/HerrErde'">
+                    <h3>Reddit</h3>
+                </div>
+                <div onclick="document.location.href='https://www.youtube.com/channel/UCjkPiF3lAuM2uPWSPEv4ssA'">
+                    <h3>Youtube</h3>
+                </div>
+                <div onclick="document.location.href='https://steamcommunity.com/id/herrerde'">
+                    <h3>Steam</h3>
+                </div>
+                <div onclick="document.location.href='mailto:Natodamm@hotmail.com'">
+                    <h3>Mail</h3>
+                </div>
+                <div onclick="document.location.href='https://Paypal.me/HerrErde'">
+                    <h3>Paypal</h3>
+                </div>
+
+            </div>
+            <div class="icons">
+                <a href="https://twitter.com/herr_erde" target="_blank"><img src="img/twitter.png" /></a>
+                <a href="https://discord.gg/YShE3rX" target="_blank"><img src="img/discord-logo.png" /></a>
+                <a href="https://www.youtube.com/channel/UCjkPiF3lAuM2uPWSPEv4ssA" target="_blank"><img
+                        src="img/youtube-play.png" /></a>
+                <a href="https://github.com/HerrErde" target="_blank"><img src="img/github.png" /></a>
+            </div>
+    </main>
+</body>
+
+</html>
