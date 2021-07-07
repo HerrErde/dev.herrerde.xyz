@@ -5,6 +5,17 @@ body {
     transition: all 3s ease;
 }
 
+main {
+
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 2s ease;
+}
+
 #bg {
     background: linear-gradient(to right top, #0e8196, #1e62bb, #6007c5, #7f068f);
     position: fixed;
@@ -15,20 +26,9 @@ body {
     z-index: -1;
 }
 
-main {
-    /* background:linear-gradient(to right top, #002a35, #23005c, #430069, #510076); */
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all 2s ease;
-}
-
 div.bruh {
     position: absolute;
-    bottom: 5%;
+    bottom:17%;
     left: 4%;
     color: white;
     font-family: "Nunito Sans";
@@ -40,9 +40,11 @@ a {
 
 .icons {
     display: flex;
+    bottom: 4%;
+    left: 4%;
     /* width:500px; */
     /* align-items: space-between; */
-    /* position:absolute; */
+    position: fixed;
 }
 
 .icons>a {
@@ -68,6 +70,38 @@ a {
 
 #hate>h3 {
     font-size: 12px
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    /* width:80%; */
+
+    align-items: baseline;
+}
+
+.projects>div {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 150px;
+    height: 170px;
+    background: rgba(1, 2, 1, 0.1);
+    border-radius: 10px;
+    padding: 4px;
+    /* align-items: center; */
+    transition:all 1s ease;
+}
+
+.projects>div:hover {
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, .5);
+    transform: scale(1.05,1.05);
+    transition: all .3s ease;
+    cursor:pointer;
+}
+
+.projects>div>h3 {
+    margin-top: 3px;
 }
 
 .legend {
