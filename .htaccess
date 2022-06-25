@@ -1,7 +1,7 @@
+Options +SymLinksIfOwnerMatch
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)\.html$ /$1 [L,R=302]
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
 ErrorDocument 401 error-page/401.html
 ErrorDocument 403 error-page/403.html
 ErrorDocument 404 error-page/404.html
