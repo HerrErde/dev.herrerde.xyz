@@ -29,7 +29,13 @@
         <div class="welc">
             <h1 style="font-size:60px;margin-bottom:-5%;" id="title">Just some</h1>
             <h2 style="font-size:40px;" id="subt">
-                <script>document.write(new Date().getFullYear() - 2005)</script> year old coder
+                <script>
+                    let currentDate = new Date();
+                    let birthdate = new Date("2005-02-12");
+                    let ageInMilliseconds = currentDate - birthdate;
+                    let ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
+                    document.write(Math.floor(ageInYears) + " years old coder");
+                  </script>
             </h2>
             <h3 style="font-size:30px;">Who likes <a
                     href="https://github.com/HerrErde?tab=repositories&q=&type=&language=javascript&sort=">JavaScript</a>
