@@ -5,7 +5,6 @@ body {
 }
 
 main {
-  /* background:linear-gradient(to right top, #002a35, #23005c, #430069, #510076); */
   position: absolute;
   left: 0%;
   top: 0%;
@@ -15,22 +14,20 @@ main {
   transition: all 2s ease;
 }
 
-#bg {
-  background: linear-gradient(to right top, #0e8196, #1e62bb, #6007c5, #7f068f);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0%;
-  top: 0%;
-  z-index: -1;
+a {
+  color: #0abbaa;
 }
 
-div.bruh {
-  position: absolute;
-  bottom: 5%;
-  left: 4%;
-  color: white;
-  font-family: 'Nunito Sans';
+#bg {
+  background: linear-gradient(to right top, #0e8196, #1e62bb, #6007c5, #7f068f);
+  width: 100%;
+  height: 100%;
+}
+
+#bg-dark {
+  background: linear-gradient(to right top, #002a35, #23005c, #430069, #510076);
+  width: 100%;
+  height: 100%;
 }
 
 div.welc {
@@ -41,17 +38,22 @@ div.welc {
   font-family: 'Nunito Sans';
 }
 
-a {
-  color: #0abbaa;
+div.bruh {
+  position: absolute;
+  bottom: 5%;
+  left: 4%;
+  color: white;
+  font-family: 'Nunito Sans';
 }
 
-.icons {
-  position: static;
-  display: flex;
+#title {
+  padding-bottom: 30px;
+  margin-bottom: 7%;
 }
 
-.icons > a {
-  width: 90px;
+#subt {
+  padding-bottom: 40px;
+  margin-bottom: 5%;
 }
 
 #hate {
@@ -108,18 +110,15 @@ a {
   text-decoration: none;
   background-color: #0abbaa;
   padding: 6px;
-  border-radius: 4px;
   margin: 5px;
   margin-top: 10px;
+  border-radius: 4px;
 }
 
 .button {
   display: inline-block;
   color: #fff;
   padding: 10px 20px;
-  font-size: 20px;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)) top/100% 800%;
-  transition: 0.5s;
 }
 
 .button:hover {
@@ -141,7 +140,6 @@ a {
   background: rgba(1, 2, 1, 0.1);
   border-radius: 10px;
   padding: 4px;
-  /* align-items: center; */
   transition: all 1s ease;
 }
 
@@ -156,6 +154,16 @@ a {
   margin-top: 3px;
 }
 
+.icons {
+  position: static;
+  display: flex;
+  justify-content: ;
+}
+
+.icons > a {
+  width: 90px;
+}
+
 @media only screen and (max-width: 600px) {
   .projects > div {
     margin-right: 5px;
@@ -163,7 +171,6 @@ a {
     text-align: center;
     width: 150px;
     height: 120px;
-    background: rgba(1, 2, 1, 0.1);
     border-radius: 10px;
     padding: 5px;
     transition: all 1s ease;
@@ -174,5 +181,20 @@ a {
     transform: scale(1.05, 1.05);
     transition: all 0.3s ease;
     cursor: pointer;
+  }
+
+  .bruh {
+    position: absolute;
+    left: 4%;
+    color: white;
+    font-family: 'Nunito Sans';
+  }
+
+  .legend > div {
+    flex-wrap: nowrap;
+  }
+
+  #title {
+    padding-top: 40px;
   }
 }
