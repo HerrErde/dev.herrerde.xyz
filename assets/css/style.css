@@ -47,7 +47,7 @@ div.bruh {
 }
 
 #title {
-  padding-bottom: 30px;
+  margin: 0px;
   margin-bottom: 7%;
 }
 
@@ -157,7 +157,6 @@ div.bruh {
 .icons {
   position: static;
   display: flex;
-  justify-content: ;
 }
 
 .icons > a {
